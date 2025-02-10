@@ -1,0 +1,17 @@
+body {
+  min-width: 300px;
+  min-height: 100px;
+  text-align: center;
+  padding: 10px;
+  padding-top: 0px;
+  box-sizing: border-box;
+  align-content: baseline;
+}
+
+label {
+  font-size: 15px;
+}
+
+input[type=checkbox] {
+  vertical-align: bottom;
+}

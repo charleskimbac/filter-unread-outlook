@@ -1,5 +1,16 @@
 main();
 async function main() {
+  const response = await chrome.storage.local.get("isEnabled");
+  let isEnabled;
+
+  if (Object.keys(isEnabled).length === 0) { // if empty, true by def
+    chrome.storage.local.set({isEnabled: true});
+    isEnabled = true;
+  }
+  if (!isEnabled) {
+    return;
+  }
+
   let filterButton = document.querySelector("#mailListFilterMenu");
   while (!filterButton || !filterButton.isConnected) {
     filterButton = await waitForElement("#mailListFilterMenu", 500);
