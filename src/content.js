@@ -3,10 +3,13 @@ async function main() {
   const response = await chrome.storage.local.get("isEnabled");
   let isEnabled;
 
-  if (Object.keys(isEnabled).length === 0) { // if empty, true by def
+  if (Object.keys(response).length === 0) { // if empty, true by def
     chrome.storage.local.set({isEnabled: true});
     isEnabled = true;
+  } else {
+    isEnabled = response.isEnabled;
   }
+
   if (!isEnabled) {
     return;
   }
