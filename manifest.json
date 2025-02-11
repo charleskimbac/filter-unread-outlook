@@ -1,8 +1,8 @@
 {
 "manifest_version": 3,
   "name": "Filter Unread in Outlook",
-  "version": "0.0.2",
-  "description": "By default, filter your Outlook mail by unread.",
+  "version": "0.0.3",
+  "description": "By default, filter your Outlook mail by unread. Temporarily disable or enable by clicking on the extension.",
   "permissions": ["storage"],
   "host_permissions": ["*://outlook.office.com/mail/*", "*://outlook.live.com/mail/*"],
   "content_scripts": [
