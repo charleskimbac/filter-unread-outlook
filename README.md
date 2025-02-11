@@ -3,3 +3,5 @@ By default, filter your Outlook mail by unread. Temporarily disable or enable by
 
 ## Chrome Extension
 https://chromewebstore.google.com/detail/ehnabmejlfgcnagilooblmelbdikclgc
+
+<img src=images/popup.png height=350px>
